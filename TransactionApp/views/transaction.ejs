@@ -1,1 +1,18 @@
-ECHO is on.
+<h1> Transactions for <%= user.username %> </h1>
+<p>Here is your list of things to do!</p>
+<h1> Add a New Transaction</h1>
+<form method="post" action="/makeTransaction">
+    description: <input type="text"
+                    autocomplete="description"
+                    name="description"><br>
+    category: <input type="text"
+                    autocomplete="category"
+                    name="category"><br>
+    amount: <input type="number"
+                    autocomplete="amount"
+                    name="number"><br>
+    date: <input type="date"
+                    autocomplete="mm/dd/yyyy"
+                    name="date"><br>
+    <input type="submit" value="store">
+</form>
