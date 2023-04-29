@@ -1,1 +1,1 @@
-"CS103 Mongoose/Express/EJS project" 
+"CS103 Mongoose/Express/EJS projects" 
