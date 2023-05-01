@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html>
+  <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+  </style>
   <head>
+    <ul>
+      <li><a href = '/'>Home</a></li>
+      <li><a href = "/about">About</a></li>
+      <li><a href = "/team">Team</a></li>
+      <li><a href = "/gpt">GPT</a></li>
+  </ul>
     <title>About</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <h1>About the App</h1>
+    <p>
+      This app utilizes the OpenAI API and Express/Mongoose/EJS framework.
+      It allows a user to input a gpt prompt and get a response that creates a story about a superhero and their archnemesis.
+    </p>
   </body>
 </html>

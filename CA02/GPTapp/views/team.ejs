@@ -1,10 +1,62 @@
 <!DOCTYPE html>
+
+<style>
+    ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+    h2:hover {
+        cursor:pointer;
+    }
+    .about {
+        padding: 30px;
+        border-radius: 10px 40px;
+        background-color:#decddd;
+    }
+    img{
+        float:left;
+        padding-right:20px;
+    }
+</style>
 <html>
   <head>
     <title>Team</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>The Team</h1>
+    <ul>
+        <li><a href = '/'>Home</a></li>
+        <li><a href = "/about">About</a></li>
+        <li><a href = "/team">Team</a></li>
+        <li><a href = "/gpt">GPT</a></li>
+    </ul>
+    <h1>The Team</h1><br>
+    <div class = "about">
+        <img src="/images/gnomecan1.png" width="100px">
+        <h2 onclick="document.location= 'https://github.com/EfrenHaskell'"><b>Efren Haskell</b></h2>
+        <p>efrenhask@brandeis.edu</p>
+        <p> -Computer Science Student</p>
+        <p> -Likes food</p>
+        <p> -Doesn't sleep very much</p>
+    </div>
   </body>
 </html>
