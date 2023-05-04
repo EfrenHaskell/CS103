@@ -24,6 +24,8 @@ app.use(teamRouter);
 app.use(aboutRouter);
 app.use(gptRouter);
 
+console.log("connected at localhost:3000");
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
